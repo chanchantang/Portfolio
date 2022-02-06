@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Home</title>
+</head>
+<body>
+    <div class="header">
+        <img class="logo" src="assets/logo.png" alt="Logo">
+        <ul class="links">
+            <!-- <li><a href="/index.html" class="underline">Home</a></li> -->
+            <li><a href="#about" class="underline">About</a></li>
+            <li><a href="#portfolio" class="underline">Portfolio</a></li>
+            <li><a href="#footer" class="underline">Contact</a></li>
+            <!-- <li><a href="https://www.google.com/" class="underline">Contact</a></li> -->
+        </ul>
+    </div>
+
+    <div class="banner">
+        <img id="bg" src="assets/background.jpg" alt="Backstreets of Akabane">
+        <div class="banner-container">
+            <div class="banner-main">Chanson Tang</div>
+            <div class="banner-sec">Avid learner, always striving for better</div>
+            <button class="banner-butt" onClick="document.getElementById('about').scrollIntoView();">Continue</button>
+        </div>
+    </div>
+
+    <div class="about" id="about">
+        <div class="about-main">About<div class="secret">If you find this I'll give you a reward c:</div></div>
+        <div class="about-info">
+            <img class="about-image" src="assets/self.jpg" alt="Picture of myself">
+            <div class="console">
+                > Chanson.origin
+                <br>
+                <span class="answer">
+                    &nbsp;&nbsp;=> “Vancouver, Canada”
+                    <br>
+                    <br>
+                </span>
+                > Chanson.education
+                <br>
+                <span class="answer">
+                    &nbsp;&nbsp;=> “Simon Fraser University”
+                    <br>
+                    <br>
+                </span>
+                > Chanson.major
+                <br>
+                <span class="answer">
+                    &nbsp;&nbsp;=> “Computer Science”
+                    <br>
+                    <br>
+                </span>
+                <!-- > Chanson.about
+                <br>
+                <span class="answer">
+                    &nbsp;&nbsp;=> "Avid learner, always striving for better"
+                    <br>
+                    <br>
+                </span> -->
+                > Chanson.interest
+                <br>
+                <span class="answer">
+                    &nbsp;&nbsp;=> [“Design”, “Code”, “Ultimate Frisbee”, “Volleyball”,  “Video Games”, “Anime”]
+                    <br>
+                </span>
+            </div>
+        </div>
+        
+        <div class="education">
+            <div class="education-main">Education</div>
+            <div class="sfu">
+                <div class="sfu-timeline">
+                    <div>2018-Present</div>
+                    <br>
+                    <div style="color: rgb(170, 170, 255);">Simon Fraser University</div>
+                </div>
+                <div class="sfu-link">
+                    <div>Under the CMPT program which focuses on the study of computers</div>
+                    <br>
+                    <a href="https://www.sfu.ca/computing.html"><span class="material-icons" style="color: rgb(68, 68, 255);">chevron_right</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="line2"></div>
+    <div class="portfolio" id="portfolio">
+        <div class="portfolio-title">
+            <div class="portfolio-main">Portfolio</div>
+            <div class="portfolio-sec">Projects</div>
+        </div>
+        
+        <!-- <div class="line"></div> -->
+        <div class="container">
+            <a href="https://github.com/chanchantang/AI-Forest-Runner" class="card">
+                <img class="card-image" src="assets/runner.jpeg" alt="Screenshot of game">
+                <div class="card-middle">
+                    <div class="card-text-main">Forest Runner</div>
+                    <div class="card-text-sec">Python/PyGame/NEAT</div>
+                </div>
+            </a>
+            <a href="" class="card">
+                <img class="card-image" src="assets/background.jpg" alt="Backstreets of Akabane">
+                <div class="card-middle">
+                    <div class="card-text-main">Portfolio Website</div>
+                    <div class="card-text-sec">HTML/CSS/JS</div>
+                </div>
+            </a>
+            <a href="https://github.com/chanchantang/Big-Brain-Bot" class="card">
+                <img class="card-image" src="assets/discord.jpg" alt="Screenshot of one of the functions of the Bot">
+                <div class="card-middle">
+                    <div class="card-text-main">Discord Bot</div>
+                    <div class="card-text-sec">Python/Web API</div>
+                </div>
+            </a>
+            <a href="https://chanchantang.github.io/Pocket-Poke/" class="card">
+                <img class="card-image" src="assets/pokemon.png" alt="My Pokemon Game">
+                <div class="card-middle">
+                    <div class="card-text-main">Pocket Poke</div>
+                    <div class="card-text-sec">HTML/CSS/JS</div>
+                </div>
+            </a>
+        </div>
+        <div class="line"></div>
+    </div>
+
+    <ul class="footer" id="footer">
+        <li>
+            <div class="footer-main">Contact</div>
+        </li>
+        <li>
+            <div class="link">
+                <i class="material-icons">call</i>
+                778-302-6266
+            </div>
+        </li>
+        <li>
+            <a class="link" href="mailto:cta111@sfu.ca">
+                <i class="material-icons">email</i>
+                cta111@sfu.ca
+            </a>
+        </li>
+        <li>
+            <a class="link" href="/assets/resume.pdf">
+                <i class="material-icons">insert_drive_file</i>
+                Resume
+            </a>
+        </li>
+    </ul>
+</body>
+</html>
